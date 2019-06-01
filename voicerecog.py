@@ -10,7 +10,7 @@ try:
     text = r.recognize_google(audio)
     print('you said: ', text)
 except:
-    print('tranlate failed')
+    print('translate failed')
 
 with open('waveaudio.wav','wb') as f:
     f.write(audio.get_wav_data())
